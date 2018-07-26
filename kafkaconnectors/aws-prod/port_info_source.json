@@ -1,0 +1,15 @@
+{
+  "name": "port_info_source_prod_v1",
+  "config": {
+    "name": "port_info_source_prod_v1",
+    "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+    "tasks.max": "5",
+    "connection.url": "jdbc:sqlserver://10.14.25.240:14725;databaseName=AS400_Mirror",
+    "connection.user": "kafka_user",
+    "connection.password": "[kafka_connectors_e2k_password_aws_prod]",
+    "query": "SELECT DISTINCT SMBRND AS BRAND_CODE , AWPTCD AS PORT_CODE , RTRIM(POPTNM) AS PORT_NAME , CASE WHEN (AWDYNO = 1) THEN 'D' WHEN (AWDYNO = SMNODY + 1) THEN 'A' ELSE 'P' END AS PORT_TYPE FROM ICSLMD A INNER JOIN ICITND ON (A.SMITCD = ITITCD) INNER JOIN ICIDYD ON (ITITCD = AWITCD AND ITEFDT = AWEFDT) INNER JOIN ICPRTD ON (POPTCD = AWPTCD) WHERE ITEFDT = (SELECT MAX(ITEFDT) FROM ICITND WHERE A.SMITCD = ITITCD AND ITEFDT <= A.SMSDDT) AND AWPTCD <> 'ASE' AND A.SMSDDT >= dbo.udf_Convert_To_E2K_Date(GETDATE()) UNION SELECT DISTINCT G.SMBRND AS BRAND_CODE , F.BLCIID AS PORT_CODE , F.BLCINM AS PORT_NAME , 'C' AS PORT_TYPE FROM ICPKGD INNER JOIN ICSLMD G ON (BHSHIP = G.SMSHIP AND BHITCD = G.SMITCD) INNER JOIN ICPKCD ON BHPKID = BIPKID INNER JOIN TRSCHD D ON BIPKCC = D.BNTOCD INNER JOIN TRCOMD E ON D.BNCMCD = E.BACMCD INNER JOIN TRPKMD ON D.BNTOCD = EITOCD INNER JOIN TRCITD F ON E.BASCID = F.BLCIID WHERE EIRCTF = 'Y' AND D.BNDYNR = 1 AND D.BNSQNO = 1 AND G.SMSDDT >= dbo.udf_Convert_To_E2K_Date(GETDATE())",
+    "mode": "bulk",
+    "poll.interval.ms": "3600000",
+    "topic.prefix": "port_info_prod_v1"
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "_sampleEntry": {
+    "contactNodes": [],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "",
+    "dataStaxStudioConnection": "",
+    "opsCenterUrl": "",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "cloud-dev": {
+    "contactNodes": [
+      "10.16.6.162",
+      "10.16.4.106",
+      "10.16.7.47"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.16.4.155:8080",
+    "dataStaxStudioConnection": "AWS-DEV",
+    "opsCenterUrl": "10.16.4.155:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-dev": {
+    "contactNodes": [
+      "10.135.105.161",
+      "10.135.105.162",
+      "10.135.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.135.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-TST",
+    "opsCenterUrl": "10.135.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "cloud-test": {
+    "contactNodes": [
+      "10.16.4.166",
+      "10.16.4.235",
+      "10.16.5.8"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.16.4.66:8080",
+    "dataStaxStudioConnection": "AWS-TST",
+    "opsCenterUrl": "10.16.4.66:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-test": {
+    "contactNodes": [
+      "10.135.105.161",
+      "10.135.105.162",
+      "10.135.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.135.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-TST",
+    "opsCenterUrl": "10.135.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-test-2": {
+    "contactNodes": [
+      "10.196.105.161",
+      "10.196.105.162",
+      "10.196.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.196.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-TST2",
+    "opsCenterUrl": "10.196.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "cloud-stage": {
+    "contactNodes": [
+      "10.17.134.53",
+      "10.17.134.246",
+      "10.17.134.120"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.17.134.34:8080",
+    "dataStaxStudioConnection": "AWS-STG",
+    "opsCenterUrl": "10.17.134.34:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-stage": {
+    "contactNodes": [
+      "10.137.105.161",
+      "10.137.105.162",
+      "10.137.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.137.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-STG",
+    "opsCenterUrl": "10.137.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "cloud-prod": {
+    "contactNodes": [
+      "10.17.124.47",
+      "10.17.124.88",
+      "10.17.124.231"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.17.124.24:8080",
+    "dataStaxStudioConnection": "AWS-PRD",
+    "opsCenterUrl": "10.17.124.24:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-prod-ad": {
+    "contactNodes": [
+      "10.126.105.161",
+      "10.126.105.162",
+      "10.126.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.126.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-AD",
+    "opsCenterUrl": "10.126.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-prod-al": {
+    "contactNodes": [
+      "10.154.105.161",
+      "10.154.105.162",
+      "10.154.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.154.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-AL",
+    "opsCenterUrl": "10.154.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-prod-br": {
+    "contactNodes": [
+      "10.127.105.161",
+      "10.127.105.162",
+      "10.127.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.127.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-BR",
+    "opsCenterUrl": "10.127.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-prod-cs": {
+    "contactNodes": [
+      "10.142.105.161",
+      "10.142.105.162",
+      "10.142.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.142.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-CS",
+    "opsCenterUrl": "10.142.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-prod-eg": {
+    "contactNodes": [
+      "10.166.105.161",
+      "10.166.105.162",
+      "10.166.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.166.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-EG",
+    "opsCenterUrl": "10.166.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-prod-en": {
+    "contactNodes": [
+      "10.117.105.161",
+      "10.117.105.162",
+      "10.117.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.117.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-EN",
+    "opsCenterUrl": "10.117.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-prod-eq": {
+    "contactNodes": [
+      "10.149.105.161",
+      "10.149.105.162",
+      "10.149.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.149.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-EQ",
+    "opsCenterUrl": "10.149.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-prod-gr": {
+    "contactNodes": [
+      "10.113.105.161",
+      "10.113.105.162",
+      "10.113.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.113.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-GR",
+    "opsCenterUrl": "10.113.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-prod-hm": {
+    "contactNodes": [
+      "10.164.105.161",
+      "10.164.105.162",
+      "10.164.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.164.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-HM",
+    "opsCenterUrl": "10.164.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-prod-id": {
+    "contactNodes": [
+      "10.147.105.161",
+      "10.147.105.162",
+      "10.147.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.147.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-ID",
+    "opsCenterUrl": "10.147.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-prod-ma": {
+    "contactNodes": [
+      "10.132.105.161",
+      "10.132.105.162",
+      "10.132.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.132.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-MA",
+    "opsCenterUrl": "10.132.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-prod-mj": {
+    "contactNodes": [],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "",
+    "dataStaxStudioConnection": "SHIP-MJ",
+    "opsCenterUrl": "",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-prod-oa": {
+    "contactNodes": [
+      "10.150.105.161",
+      "10.150.105.162",
+      "10.150.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.150.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-OA",
+    "opsCenterUrl": "10.150.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-prod-pr": {
+    "contactNodes": [
+      "10.157.105.161",
+      "10.157.105.162",
+      "10.157.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.157.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-PR",
+    "opsCenterUrl": "10.157.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-prod-rf": {
+    "contactNodes": [
+      "10.156.105.161",
+      "10.156.105.162",
+      "10.156.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.156.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-RF",
+    "opsCenterUrl": "10.156.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-prod-sr": {
+    "contactNodes": [
+      "10.130.105.161",
+      "10.130.105.162",
+      "10.130.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.130.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-SR",
+    "opsCenterUrl": "10.130.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  },
+  "ship-prod-sy": {
+    "contactNodes": [
+      "10.165.105.161",
+      "10.165.105.162",
+      "10.165.105.163"
+    ],
+    "contactPort": 8042,
+    "dataStaxStudioUrl": "10.165.105.160:8080",
+    "dataStaxStudioConnection": "SHIP-SY",
+    "opsCenterUrl": "10.165.105.160:8888",
+    "opsCenterUsername": "read_only",
+    "opsCenterPassword": "read_only"
+  }
+}

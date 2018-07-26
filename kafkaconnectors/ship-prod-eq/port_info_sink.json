@@ -1,0 +1,17 @@
+{
+  "name": "port_info_sink_prod_v1",
+  "config": {
+    "name": "port_info_sink_prod_v1",
+    "connector.class": "com.datamountaineer.streamreactor.connect.cassandra.sink.CassandraSinkConnector",
+    "connect.progress.enabled": "true",
+    "tasks.max": "5",
+    "topics": "port_info_prod_v1",
+    "connect.cassandra.sink.kcql": "INSERT INTO ports SELECT * FROM port_info_prod_v1",
+    "connect.cassandra.port": "8042",
+    "connect.cassandra.key.space": "port_info",
+    "connect.cassandra.contact.points": "10.149.105.161,10.149.105.162,10.149.105.163",
+    "connect.cassandra.username": "kafkaship",
+    "connect.cassandra.password": "[kafka_connectors_cassandra_password_ship_prod_eq]",
+    "connect.cassandra.kcql": "INSERT INTO ports SELECT * FROM port_info_prod_v1"
+  }
+}

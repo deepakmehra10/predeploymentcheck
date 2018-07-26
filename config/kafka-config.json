@@ -1,0 +1,418 @@
+{
+  "_sampleEntry": {
+    "zookeepers": [
+      "[ZOOKEEPER_URLS_GO_HERE]"
+    ],
+    "brokers": [
+      "[BROKER_URLS_GO_HERE]"
+    ],
+    "kafkaConnectUrl": "",
+    "controlCenterUrl": "",
+    "kafkaRestApiUrl": "",
+    "schemaRegistryUrl": ""
+  },
+  "cloud-dev": {
+    "zookeepers": [
+      "10.16.5.179:2181/dcos-service-confluent-kafka",
+      "10.16.6.213:2181/dcos-service-confluent-kafka",
+      "10.16.6.72:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.16.7.7:9092",
+      "10.16.6.71:9092",
+      "10.16.4.39:9092"
+    ],
+    "kafkaConnectUrl": "http://10.16.4.176/kafka-connect",
+    "controlCenterUrl": "http://10.16.4.176:10108/control-center",
+    "kafkaRestApiUrl": "http://10.16.4.176/kafka-api",
+    "schemaRegistryUrl": "http://10.16.4.176/schema-registry/subjects"
+  },
+  "ship-dev": {
+    "zookeepers": [
+      "10.135.105.151:2181/dcos-service-confluent-kafka",
+      "10.135.105.152:2181/dcos-service-confluent-kafka",
+      "10.135.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.135.105.154:9092",
+      "10.135.105.155:9092",
+      "10.135.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.135.105.158/kafka-connect",
+    "controlCenterUrl": "http://10.135.105.158:10133/control-center",
+    "kafkaRestApiUrl": "http://10.135.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.135.105.158:10131/subjects"
+  },
+  "cloud-test": {
+    "zookeepers": [
+      "10.16.4.247:2181/dcos-service-confluent-kafka",
+      "10.16.5.137:2181/dcos-service-confluent-kafka",
+      "10.16.6.32:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.16.4.189:9092",
+      "10.16.6.228:9092",
+      "10.16.6.44:9092"
+    ],
+    "kafkaConnectUrl": "http://10.16.6.92/kafka-connect",
+    "controlCenterUrl": "http://10.16.6.92:10108/control-center",
+    "kafkaRestApiUrl": "http://10.16.6.92/kafka-api",
+    "schemaRegistryUrl": "http://10.16.6.92/schema-registry/subjects"
+  },
+  "ship-test": {
+    "zookeepers": [
+      "10.135.105.151:2181/dcos-service-confluent-kafka",
+      "10.135.105.152:2181/dcos-service-confluent-kafka",
+      "10.135.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.135.105.154:9092",
+      "10.135.105.155:9092",
+      "10.135.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.135.105.158/kafka-connect",
+    "controlCenterUrl": "http://10.135.105.158:10133/control-center",
+    "kafkaRestApiUrl": "http://10.135.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.135.105.158:10131/subjects"
+  },
+  "ship-test-2": {
+    "zookeepers": [
+      "10.196.105.151:2181/dcos-service-confluent-kafka",
+      "10.196.105.152:2181/dcos-service-confluent-kafka",
+      "10.196.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.196.105.154:9092",
+      "10.196.105.155:9092",
+      "10.196.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.196.105.158/kafka-connect",
+    "controlCenterUrl": "http://10.196.105.158:10133/control-center",
+    "kafkaRestApiUrl": "http://10.196.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.196.105.158:10131/subjects"
+  },
+  "cloud-stage": {
+    "zookeepers": [
+      "10.17.131.56:2181/dcos-service-confluent-kafka",
+      "10.17.131.168:2181/dcos-service-confluent-kafka",
+      "10.17.132.62:2181/dcos-service-confluent-kafka",
+      "10.17.132.194:2181/dcos-service-confluent-kafka",
+      "10.17.135.79:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.17.131.176:9092",
+      "10.17.132.82:9092",
+      "10.17.135.9:9092"
+    ],
+    "kafkaConnectUrl": "http://10.17.131.92/kafka-connect",
+    "controlCenterUrl": "http://10.17.131.92:10133/control-center",
+    "kafkaRestApiUrl": "http://10.17.131.92:10132/kafka-api",
+    "schemaRegistryUrl": "http://10.17.131.92:10131/subjects"
+  },
+  "ship-stage": {
+    "zookeepers": [
+      "10.137.105.151:2181/dcos-service-confluent-kafka",
+      "10.137.105.152:2181/dcos-service-confluent-kafka",
+      "10.137.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.137.105.154:9092",
+      "10.137.105.155:9092",
+      "10.137.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.137.105.158/kafka-connect",
+    "controlCenterUrl": "http://10.137.105.158:10133/control-center",
+    "kafkaRestApiUrl": "http://10.137.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.137.105.158:10131/subjects"
+  },
+  "cloud-prod": {
+    "zookeepers": [
+      "10.17.121.6:2181/dcos-service-confluent-kafka",
+      "10.17.121.64:2181/dcos-service-confluent-kafka",
+      "10.17.122.189:2181/dcos-service-confluent-kafka",
+      "10.17.122.223:2181/dcos-service-confluent-kafka",
+      "10.17.125.67:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.17.121.27:9092",
+      "10.17.122.121:9092",
+      "10.17.125.74:9092"
+    ],
+    "kafkaConnectUrl": "http://10.17.121.235/kafka-connect",
+    "controlCenterUrl": "http://10.17.121.235:10133/control-center",
+    "kafkaRestApiUrl": "http://10.17.121.235/kafka-api",
+    "schemaRegistryUrl": "http://10.17.121.235:10131/subjects"
+  },
+  "ship-prod-ad": {
+    "zookeepers": [
+      "10.126.105.151:2181/dcos-service-confluent-kafka",
+      "10.126.105.152:2181/dcos-service-confluent-kafka",
+      "10.126.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.126.105.154:9092",
+      "10.126.105.155:9092",
+      "10.126.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.126.105.158:10109",
+    "controlCenterUrl": "http://10.126.105.158:10133/control-center",
+    "kafkaRestApiUrl": "http://10.126.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.126.105.158:10131/subjects"
+  },
+  "ship-prod-al": {
+    "zookeepers": [
+      "10.154.105.151:2181/dcos-service-confluent-kafka",
+      "10.154.105.152:2181/dcos-service-confluent-kafka",
+      "10.154.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.154.105.154:9092",
+      "10.154.105.155:9092",
+      "10.154.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.154.105.158/kafka-connect",
+    "controlCenterUrl": "http://10.154.105.158:10133/control-center",
+    "kafkaRestApiUrl": "http://10.154.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.154.105.158:10131/subjects"
+  },
+  "ship-prod-br": {
+    "zookeepers": [
+      "10.127.105.151:2181/dcos-service-confluent-kafka",
+      "10.127.105.152:2181/dcos-service-confluent-kafka",
+      "10.127.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.127.105.154:9092",
+      "10.127.105.155:9092",
+      "10.127.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.127.105.158/kafka-connect",
+    "controlCenterUrl": "http://10.127.105.158:10133/control-center",
+    "kafkaRestApiUrl": "http://10.127.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.127.105.158:10131/subjects"
+  },
+  "ship-prod-cs": {
+    "zookeepers": [
+      "10.142.105.151:2181/dcos-service-confluent-kafka",
+      "10.142.105.152:2181/dcos-service-confluent-kafka",
+      "10.142.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.142.105.154:9092",
+      "10.142.105.156:9092",
+      "10.142.105.155:9092"
+    ],
+    "kafkaConnectUrl": "http://10.142.105.158:10109",
+    "controlCenterUrl": "http://10.142.105.158:10133",
+    "kafkaRestApiUrl": "http://10.142.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.142.105.158:10131/subjects"
+  },
+  "ship-prod-eg": {
+    "zookeepers": [
+      "10.166.105.151:2181/dcos-service-confluent-kafka",
+      "10.166.105.152:2181/dcos-service-confluent-kafka",
+      "10.166.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.166.105.154:9092",
+      "10.166.105.155:9092",
+      "10.166.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.166.105.158:10109",
+    "controlCenterUrl": "http://10.166.105.158:10133",
+    "kafkaRestApiUrl": "http://10.166.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.166.105.158:10131/subjects"
+  },
+  "ship-prod-en": {
+    "zookeepers": [
+      "10.117.105.151:2181/dcos-service-confluent-kafka",
+      "10.117.105.152:2181/dcos-service-confluent-kafka",
+      "10.117.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.117.105.154:9092",
+      "10.117.105.155:9092",
+      "10.117.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.117.105.158:10109",
+    "controlCenterUrl": "http://10.117.105.158:10133",
+    "kafkaRestApiUrl": "http://10.117.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.117.105.158:10131/subjects"
+  },
+  "ship-prod-eq": {
+    "zookeepers": [
+      "10.149.105.151:2181/dcos-service-confluent-kafka",
+      "10.149.105.152:2181/dcos-service-confluent-kafka",
+      "10.149.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.149.105.154:9092",
+      "10.149.105.155:9092",
+      "10.149.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.149.105.158:10109",
+    "controlCenterUrl": "http://10.149.105.158:10133",
+    "kafkaRestApiUrl": "http://10.149.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.149.105.158:10131/subjects"
+  },
+  "ship-prod-gr": {
+    "zookeepers": [
+      "10.113.105.151:2181/dcos-service-confluent-kafka",
+      "10.113.105.152:2181/dcos-service-confluent-kafka",
+      "10.113.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.113.105.154:9092",
+      "10.113.105.155:9092",
+      "10.113.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.113.105.158:10109",
+    "controlCenterUrl": "http://10.113.105.158:10133",
+    "kafkaRestApiUrl": "http://10.113.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.113.105.158:10131/subjects"
+  },
+  "ship-prod-hm": {
+    "zookeepers": [
+      "10.164.105.151:2181/dcos-service-confluent-kafka",
+      "10.164.105.152:2181/dcos-service-confluent-kafka",
+      "10.164.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.164.105.154:9092",
+      "10.164.105.155:9092",
+      "10.164.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.164.105.158:10109",
+    "controlCenterUrl": "http://10.164.105.158:10133",
+    "kafkaRestApiUrl": "http://10.164.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.164.105.158:10131/subjects"
+  },
+  "ship-prod-id": {
+    "zookeepers": [
+      "10.147.105.151:2181/dcos-service-confluent-kafka",
+      "10.147.105.152:2181/dcos-service-confluent-kafka",
+      "10.147.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.147.105.154:9092",
+      "10.147.105.155:9092",
+      "10.147.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.147.105.158/kafka-connect",
+    "controlCenterUrl": "http://10.147.105.158:10133/control-center",
+    "kafkaRestApiUrl": "http://10.147.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.147.105.158:10131/subjects"
+  },
+  "ship-prod-ma": {
+    "zookeepers": [
+      "10.132.105.151:2181/dcos-service-confluent-kafka",
+      "10.132.105.152:2181/dcos-service-confluent-kafka",
+      "10.132.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.132.105.154:9092",
+      "10.132.105.155:9092",
+      "10.132.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.132.105.158/kafka-connect",
+    "controlCenterUrl": "http://10.132.105.158:10133/control-center",
+    "kafkaRestApiUrl": "http://10.132.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.132.105.158:10131/subjects"
+  },
+  "ship-prod-mj": {
+    "zookeepers": [
+      "10.107.105.151:2181/dcos-service-confluent-kafka",
+      "10.107.105.152:2181/dcos-service-confluent-kafka",
+      "10.107.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.107.105.154:9092",
+      "10.107.105.155:9092",
+      "10.107.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.107.105.158:10109",
+    "controlCenterUrl": "http://10.107.105.158:10133",
+    "kafkaRestApiUrl": "http://10.107.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.107.105.158:10131/subjects"
+  },
+  "ship-prod-oa": {
+    "zookeepers": [
+      "10.150.105.151:2181/dcos-service-confluent-kafka",
+      "10.150.105.152:2181/dcos-service-confluent-kafka",
+      "10.150.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.150.105.154:9092",
+      "10.150.105.155:9092",
+      "10.150.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.150.105.158:10109",
+    "controlCenterUrl": "http://10.150.105.158:10133",
+    "kafkaRestApiUrl": "http://10.150.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.150.105.158:10131/subjects"
+  },
+  "ship-prod-pr": {
+    "zookeepers": [
+      "10.157.105.151:2181/dcos-service-confluent-kafka",
+      "10.157.105.152:2181/dcos-service-confluent-kafka",
+      "10.157.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.157.105.154:9092",
+      "10.157.105.155:9092",
+      "10.157.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.157.105.158/kafka-connect",
+    "controlCenterUrl": "http://10.157.105.158:10133/control-center",
+    "kafkaRestApiUrl": "http://10.157.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.157.105.158:10131/subjects"
+  },
+  "ship-prod-rf": {
+    "zookeepers": [
+      "10.156.105.151:2181/dcos-service-confluent-kafka",
+      "10.156.105.152:2181/dcos-service-confluent-kafka",
+      "10.156.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.156.105.154:9092",
+      "10.156.105.155:9092",
+      "10.156.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.156.105.158:10109",
+    "controlCenterUrl": "http://10.156.105.158:10133",
+    "kafkaRestApiUrl": "http://10.156.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.156.105.158:10131/subjects"
+  },
+  "ship-prod-sr": {
+    "zookeepers": [
+      "10.130.105.151:2181/dcos-service-confluent-kafka",
+      "10.130.105.152:2181/dcos-service-confluent-kafka",
+      "10.130.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.130.105.154:9092",
+      "10.130.105.155:9092",
+      "10.130.105.156:9092"
+    ],
+    "kafkaConnectUrl": "http://10.130.105.158:10109",
+    "controlCenterUrl": "http://10.130.105.158:10133",
+    "kafkaRestApiUrl": "http://10.130.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.130.105.158:10131/subjects"
+  },
+  "ship-prod-sy": {
+    "zookeepers": [
+      "10.165.105.151:2181/dcos-service-confluent-kafka",
+      "10.165.105.152:2181/dcos-service-confluent-kafka",
+      "10.165.105.153:2181/dcos-service-confluent-kafka"
+    ],
+    "brokers": [
+      "10.165.105.156:9092",
+      "10.165.105.155:9092",
+      "10.165.105.154:9092"
+    ],
+    "kafkaConnectUrl": "http://10.154.105.158:10109",
+    "controlCenterUrl": "http://10.154.105.158:10133",
+    "kafkaRestApiUrl": "http://10.165.105.158/kafka-api",
+    "schemaRegistryUrl": "http://10.165.105.158:10131/subjects"
+  }
+}

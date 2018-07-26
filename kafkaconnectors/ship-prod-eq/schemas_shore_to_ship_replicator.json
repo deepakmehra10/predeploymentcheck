@@ -1,0 +1,20 @@
+{
+  "name": "schemas_shore_to_ship_replicator_prod_v1",
+  "config": {
+    "name": "schemas_shore_to_ship_replicator_prod_v1",
+    "connector.class": "io.confluent.connect.replicator.ReplicatorSourceConnector",
+    "tasks.max": "5",
+    "key.converter": "io.confluent.connect.replicator.util.ByteArrayConverter",
+    "value.converter": "io.confluent.connect.replicator.util.ByteArrayConverter",
+    "src.consumer.auto.offset.reset": "earliest",
+    "topic.whitelist": "_schemas",
+    "src.zookeeper.connect": "10.17.121.64:2181/dcos-service-confluent-kafka,10.17.121.6:2181/dcos-service-confluent-kafka,10.17.122.23:2181/dcos-service-confluent-kafka,10.17.122.189:2181/dcos-service-confluent-kafka,10.17.125.67:2181/dcos-service-confluent-kafka",
+    "src.zookeeper.connection.timeout.ms": "30000",
+    "src.zookeeper.session.timeout.ms": "30000",
+    "src.kafka.bootstrap.servers": "10.17.125.74:9092,10.17.122.121:9092,10.17.121.27:9092",
+    "dest.zookeeper.connect": "master.mesos:2181/dcos-service-confluent-kafka",
+    "dest.zookeeper.connection.timeout.ms": "30000",
+    "dest.zookeeper.session.timeout.ms": "30000",
+    "confluent.license": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJDb25mbHVlbnQiLCJhdWQiOiJDMDAxMzAiLCJleHAiOjE1MTk0MzA0MDAsImp0aSI6ImhBVUo3NU00NWJjX1NoUHNjYWVkWEEiLCJpYXQiOjE0OTEzNDQwNDEsIm5iZiI6MTQ5MTM0MzkyMSwic3ViIjoiY29udHJvbC1jZW50ZXIiLCJtb25pdG9yaW5nIjp0cnVlfQ.mwW2Ip17eOB6bOuSyVP50sq9duP-UFK4gl6GL-eVIUdk6Vdf4oXROWakKXaAl4983DGnvtxTGURNRk_Uh5QUs49vmRAvlHpxCEmAxX4c4eVjNu4W8IQ6icFj-I5K_qrzPz17DxuQU40VaOeMeXxElNNnB-_x1VginebxlDJ244T_7_npgrjqeAXkcziZkmRMkonKqv6bNDCoAXPnqm7397QPM2dvQHQz5tupx2jJdofNFhnWepZHzk-lDAF7GSi8jsHcYUqSB2lCF-k_0-wFljyzqdLCAPGzJgu6xvJ31hsB2eXmK1uG2tUSh34wDBX9n9_YHVfQasVxQt91QYZAEA,"
+  }
+}
