@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-deployKafkaConnectors() {
+deploy_kafka_connectors() {
 
 if [ $# -ne 2 ]; then
     echo "insufficient arguments provided"
@@ -9,23 +9,23 @@ fi
 
     echo "Kafka connector deployment in progress"
 
-    directoryHome="./kafkaconnectors"
+    directory_home="./kafkaconnectors"
     environment=$1
-    kafkaBroker=$(jq -r ".[\"$environment\"].kafkaConnectUrl" ./config/kafka-config.json)
-    echo "Kafka Broker - $kafkaBroker"
+    kafka_connect_url=$(jq -r ".[\"$environment\"].kafkaConnectUrl" ./config/kafka-config.json)
+    echo "Kafka Broker - $kafka_connect_url"
 
-    fullurl=$kafkaBroker/connectors
+    fullurl=$kafka_connect_url/connectors
     echo "$fullurl"
 
-    if [ "$(ls -A $directoryHome)" ]; then
+    if [ "$(ls -A ${directory_home})" ]; then
 
-        echo "$directoryHome directory is not Empty"
+        echo "$directory_home directory is not Empty"
 
 
-        for connector in $(cd "$directoryHome"/"$2" && ls -A *.json); do
+        for connector in $(cd "$directory_home"/"$2" && ls -A *.json); do
 
             echo "Connector Name"
-            status=$(curl -o -I -L -s -w "%{http_code}" -d @"./kafkaconnectors/$2/$connector" -H "Content-Type: application/json" -X POST "$kafkaBroker"/connectors)
+            status=$(curl -o -I -L -s -w "%{http_code}" -d @"./kafkaconnectors/$2/$connector" -H "Content-Type: application/json" -X POST "$kafka_connect_url"/connectors)
 
             if [ $? -eq 0 ]; then
 
@@ -54,4 +54,4 @@ fi
 
 }
 
-deployKafkaConnectors $1 $2
+deploy_kafka_connectors $1 $2
